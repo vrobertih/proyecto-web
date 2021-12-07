@@ -1,0 +1,59 @@
+@import "../bases/mixins";
+@import "../bases/listas";
+
+/*Recetas*/
+
+#tituloRecetas {
+  font-style: italic;
+  text-align: center;
+  margin-top: 60px;
+  color:  nth($colores , 1 );
+}
+
+.containerImg {
+  @extend .containerRecetas;
+  flex-wrap: wrap;
+}
+
+.recetaBox {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  a {
+    font-style: italic;
+    font-size: larger;
+    color: nth($colores , 2 );
+    text-decoration: none;
+  }
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+    &:hover {
+    @include hoversbox;
+    }
+  }
+}
+
+.subtituloRecetas {
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  font-style: italic;
+  color: nth($colores , 1 );
+}
+
+.receta {
+  padding: 40px;
+  border: nth($colores , 1 ) solid 2px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  background-color: beige;
+}
+
+.containerRecetas {
+  display: flex;
+  justify-content: space-evenly;
+}
+

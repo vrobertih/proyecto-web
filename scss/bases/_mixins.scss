@@ -1,0 +1,33 @@
+@mixin img-noticias {
+  width: 340px;
+  border-radius: 3px;
+  margin-left: 15%;
+}
+
+@mixin hovers {
+  transform: scale(1.2);
+  transition: all 500ms;
+}
+
+@mixin hoversbox {
+  opacity: 0.7;
+  transition: all 200ms;
+  
+}
+
+@mixin recetas {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@mixin centrar {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin titulos-contacto {
+  text-align: center;
+  font-style: italic;
+  font-size: 50px;
+  color: nth($colores, 1 )
+}

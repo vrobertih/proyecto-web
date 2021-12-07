@@ -1,0 +1,67 @@
+@import "../bases/mixins";
+@import "../bases/listas";
+
+/* Index */
+
+/*Primera Seccion*/
+#imagenHeader {
+  width: 100%;
+}
+#seccionUno {
+    margin: 5%;
+}
+
+.imagenCarrusel {
+    border-radius: 10px;
+  &:hover {
+    @include hovers;
+  }
+}
+
+.textoGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    font-style: bold;
+    font-size: xx-large;
+    @media screen and (max-width: 425px) {
+      font-size: medium;
+      font-style: bold;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    font-size: small;
+  }
+}
+
+/*Segunda Seccion*/
+
+.bgColor {
+  background-color: nth($colores , 3 );
+  padding-bottom: 10px;
+}
+
+#tituloNoticias {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.container {
+    margin: 2%;
+}
+
+.noticias {
+  img {
+    @include img-noticias;
+     @media screen and (max-width: 768px) {
+      width: 240px;
+    }
+  }
+}
+.noticiasTxt {
+  padding-top: 8%;
+}

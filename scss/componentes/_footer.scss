@@ -1,0 +1,33 @@
+@import "../bases/listas";
+
+/*Footer*/
+
+.containerFooter {
+  background-color: nth($colores , 3 );
+  color: nth($colores , 1 );
+}
+
+.enlacesFooter {
+  li a {
+    color: nth($colores , 1 );
+    text-decoration: none;
+  }
+  &:hover li a {
+    opacity: 0.7;
+    transition: all 200ms;
+  }
+}
+.boton:hover {
+  opacity: 0.7;
+  transition: all 200ms;
+}
+.newsletter {
+  i {
+    font-size: 18px;
+  }
+}
+.copyright {
+  p {
+    border-top: 1px solid grey;
+  }
+}

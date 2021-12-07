@@ -1,0 +1,335 @@
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*   .congrid {
+  border: 8px solid green;
+}
+.rowgrid {
+  border: 3px solid red;
+}
+.colgrid {
+  border: 3px dotted blue;
+} */
+/*Header*/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logoMenu {
+  width: 150px;
+  padding-left: 15px;
+}
+
+.menuPrincipal {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  background-color: #f9f8ef;
+}
+.menuPrincipal li {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.menuPrincipal li a {
+  color: #443742;
+}
+.menuPrincipal li a:hover {
+  color: #846c5b;
+}
+
+/*Footer*/
+.containerFooter {
+  background-color: #f9f8ef;
+  color: #443742;
+}
+
+.enlacesFooter li a {
+  color: #443742;
+  text-decoration: none;
+}
+.enlacesFooter:hover li a {
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+.boton:hover {
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+.newsletter i {
+  font-size: 18px;
+}
+
+.copyright p {
+  border-top: 1px solid grey;
+}
+
+/* Index */
+/*Primera Seccion*/
+#imagenHeader {
+  width: 100%;
+}
+
+#seccionUno {
+  margin: 5%;
+}
+
+.imagenCarrusel {
+  border-radius: 10px;
+}
+.imagenCarrusel:hover {
+  transform: scale(1.2);
+  transition: all 500ms;
+}
+
+.textoGrid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.textoGrid span {
+  font-style: bold;
+  font-size: xx-large;
+}
+@media screen and (max-width: 425px) {
+  .textoGrid span {
+    font-size: medium;
+    font-style: bold;
+  }
+}
+@media screen and (max-width: 425px) {
+  .textoGrid {
+    font-size: small;
+  }
+}
+
+/*Segunda Seccion*/
+.bgColor {
+  background-color: #f9f8ef;
+  padding-bottom: 10px;
+}
+
+#tituloNoticias {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.container {
+  margin: 2%;
+}
+
+.noticias img {
+  width: 340px;
+  border-radius: 3px;
+  margin-left: 15%;
+}
+@media screen and (max-width: 768px) {
+  .noticias img {
+    width: 240px;
+  }
+}
+
+.noticiasTxt {
+  padding-top: 8%;
+}
+
+/*Recetas*/
+#tituloRecetas {
+  font-style: italic;
+  text-align: center;
+  margin-top: 60px;
+  color: #443742;
+}
+
+.containerImg {
+  flex-wrap: wrap;
+}
+
+.recetaBox {
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.recetaBox a {
+  font-style: italic;
+  font-size: larger;
+  color: #846c5b;
+  text-decoration: none;
+}
+.recetaBox img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);
+}
+.recetaBox img:hover {
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+.subtituloRecetas {
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+  font-style: italic;
+  color: #443742;
+}
+
+.receta {
+  padding: 40px;
+  border: #443742 solid 2px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  background-color: beige;
+}
+
+.containerRecetas, .containerImg {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Cursos*/
+.tituloCursos {
+  text-align: center;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-style: italic;
+  color: #443742;
+}
+
+#tituloCursosSecundario {
+  padding-top: 40px;
+  color: #443742;
+  background-color: #f9f8ef;
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+.contenedorCursos {
+  display: flex;
+  justify-content: center;
+}
+
+.cursoBox {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  max-width: 300px;
+  margin: 80px;
+  margin-top: 50px;
+  text-align: center;
+  color: #443742;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: white;
+}
+.cursoBox img {
+  width: 100%;
+  border-radius: 5px;
+}
+.cursoBox span {
+  color: grey;
+  font-size: 22px;
+}
+.cursoBox button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: #846c5b;
+  background-color: white;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+.cursoBox button:hover {
+  opacity: 0.7;
+  transition: all 200ms;
+}
+
+/*Contacto*/
+.headerCarrusel {
+  position: absolute;
+  top: 30%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.headerCarrusel h1 {
+  text-align: center;
+  font-style: italic;
+  font-size: 50px;
+  color: #443742;
+}
+@media screen and (max-width: 768px) {
+  .headerCarrusel {
+    display: none;
+  }
+}
+
+#titulosContacto {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+#titulosContacto h2 {
+  text-align: center;
+  font-style: italic;
+  font-size: 50px;
+  color: #443742;
+}
+#titulosContacto p {
+  font-style: italic;
+  font-size: larger;
+  color: #846c5b;
+  text-align: center;
+}
+
+.contenedorContacto {
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding: 60px;
+  border: solid #443742 3px;
+  border-radius: 8px;
+}
+
+#presentacion {
+  text-align: center;
+}
+#presentacion img {
+  width: 200px;
+  border-radius: 6px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+#presentacionParrafo {
+  text-align: center;
+  font-size: larger;
+  padding: 30px;
+}
+
+.logos img {
+  width: 170px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  margin-left: 15%;
+}
+
+.textoMarcas {
+  padding: 30px;
+  font-size: larger;
+}
+
+.contenedorMarcas {
+  margin-left: 7%;
+}
+
+/*# sourceMappingURL=style.css.map */

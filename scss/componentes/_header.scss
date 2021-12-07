@@ -1,0 +1,34 @@
+@import '../bases/listas';
+
+/*Header*/
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logoMenu {
+  width: 150px;
+  padding-left: 15px;
+}
+
+.menuPrincipal {
+  font-family: "Oswald", sans-serif;
+  font-size: 25px;
+  background-color: #f9f8ef;
+  li {
+    padding-left: 40px;
+    padding-right: 40px;
+    a {
+      color: nth($colores , 1 );
+      &:hover {
+        color: nth($colores , 2 );
+      }
+    }
+  }
+}
+
+
+
+

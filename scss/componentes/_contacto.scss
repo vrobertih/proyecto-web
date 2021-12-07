@@ -1,0 +1,77 @@
+/*Contacto*/
+
+.headerCarrusel {
+  position: absolute;
+  top: 30%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  h1 {
+    @include titulos-contacto;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+#titulosContacto {
+  padding-top: 40px;
+  margin-bottom: 40px;
+  h2 {
+    @include titulos-contacto;
+  }
+  p {
+    font-style: italic;
+    font-size: larger;
+    color: nth($colores, 2);
+    text-align: center;
+  }
+}
+
+.contenedorContacto {
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+  padding: 60px;
+  border: solid nth($colores, 1) 3px;
+  border-radius: 8px;
+
+}
+
+#presentacion {
+
+  text-align: center;
+  img {
+    width: 200px;
+    border-radius: 6px;
+    padding-bottom: 10px;
+    background-color: white;
+  }
+}
+
+#presentacionParrafo {
+
+  text-align: center;
+  font-size: larger;
+  padding: 30px;
+}
+
+.logos {
+  img {
+    width: 170px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    margin-left: 15%;
+
+  }
+}
+
+.textoMarcas {
+  padding: 30px;
+  font-size: larger;
+}
+
+.contenedorMarcas {
+margin-left: 7%;
+}
