@@ -26,15 +26,10 @@
   span {
     font-style: bold;
     font-size: xx-large;
-    @media screen and (max-width: 425px) {
-      font-size: medium;
-      font-style: bold;
-    }
+
   }
 
-  @media screen and (max-width: 425px) {
-    font-size: small;
-  }
+
 }
 
 /*Segunda Seccion*/
