@@ -291,6 +291,7 @@ header {
 @media screen and (max-width: 768px) {
   .contenedorContacto {
     margin: 0px;
+    padding: 30px;
   }
 }
 
